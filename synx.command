@@ -1,0 +1,1 @@
+synx --prune --no-sort-by-name ./SwiftyCSV.xcodeproj
