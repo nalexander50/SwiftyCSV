@@ -106,7 +106,7 @@
 				013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */,
 			);
 			name = "Public Interface Tests";
-			path = Tests;
+			path = "Public Interface Tests";
 			sourceTree = "<group>";
 		};
 		013D3CA41EEDCE9A004D24FC /* Config */ = {
@@ -151,6 +151,7 @@
 				013D3CB51EEDD88F004D24FC /* PrivateCSVParserTests.swift */,
 			);
 			name = "Private Implementation Tests";
+			path = "Private Implementation Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
