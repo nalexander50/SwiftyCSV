@@ -7,10 +7,7 @@ Pod::Spec.new do |spec|
   spec.authors = { "Nick Alexander" => 'alexander50@live.com' }
   spec.social_media_url = "http://twitter.com/nalexander50"
 
-  
-  spec.ios.deployment_target = '10.0'
-  spec.osx.deployment_target = '10.12'
-  spec.requires_arc = true
+  spec.platform = :ios, '8.0'
 
   spec.source = { git: "https://github.com/nalexander50/SwiftyCSV.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "SwiftyCSV/**/*.swift"
