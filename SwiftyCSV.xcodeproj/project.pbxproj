@@ -10,10 +10,23 @@
 		013D3C931EEDC811004D24FC /* SwiftyCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D3C891EEDC811004D24FC /* SwiftyCSV.framework */; };
 		013D3C981EEDC811004D24FC /* PublicCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */; };
 		013D3C9A1EEDC811004D24FC /* SwiftyCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 013D3C8C1EEDC811004D24FC /* SwiftyCSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		013D3CA71EEDCEBC004D24FC /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CA61EEDCEBC004D24FC /* Parser.swift */; };
+		013D3CA71EEDCEBC004D24FC /* DelimitedStringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CA61EEDCEBC004D24FC /* DelimitedStringParser.swift */; };
 		013D3CB11EEDD416004D24FC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D3CB01EEDD416004D24FC /* Nimble.framework */; };
 		013D3CB31EEDD41A004D24FC /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D3CB21EEDD41A004D24FC /* Quick.framework */; };
-		013D3CB61EEDD88F004D24FC /* PrivateCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CB51EEDD88F004D24FC /* PrivateCSVParserTests.swift */; };
+		013D3CB91EEE1991004D24FC /* EParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CB81EEE1991004D24FC /* EParseError.swift */; };
+		013D3CBD1EEE1A2B004D24FC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CBC1EEE1A2B004D24FC /* StringExtension.swift */; };
+		013D3CC61EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CBE1EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv */; };
+		013D3CC71EEE2BAA004D24FC /* Comma Delimited CRLF.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CBF1EEE2BAA004D24FC /* Comma Delimited CRLF.csv */; };
+		013D3CC81EEE2BAA004D24FC /* Comma Delimited LF Header.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CC01EEE2BAA004D24FC /* Comma Delimited LF Header.csv */; };
+		013D3CC91EEE2BAA004D24FC /* Comma Delimited LF.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CC11EEE2BAA004D24FC /* Comma Delimited LF.csv */; };
+		013D3CCA1EEE2BAA004D24FC /* Tab Delimited CRLF Header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CC21EEE2BAA004D24FC /* Tab Delimited CRLF Header.txt */; };
+		013D3CCB1EEE2BAA004D24FC /* Tab Delimited CRLF.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CC31EEE2BAA004D24FC /* Tab Delimited CRLF.txt */; };
+		013D3CCC1EEE2BAA004D24FC /* Tab Delimited LF Header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CC41EEE2BAA004D24FC /* Tab Delimited LF Header.txt */; };
+		013D3CCD1EEE2BAA004D24FC /* Tab Delimited LF.txt in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CC51EEE2BAA004D24FC /* Tab Delimited LF.txt */; };
+		013D3CCF1EEF5D5E004D24FC /* ParserConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CCE1EEF5D5D004D24FC /* ParserConfiguration.swift */; };
+		013D3CD11EEF5E69004D24FC /* ENewlineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CD01EEF5E69004D24FC /* ENewlineType.swift */; };
+		013D3CD31EEF9351004D24FC /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CD21EEF9351004D24FC /* DataConstants.swift */; };
+		013D3CD51EEF9FBE004D24FC /* Extreme Data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +44,27 @@
 		013D3C8C1EEDC811004D24FC /* SwiftyCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyCSV.h; sourceTree = "<group>"; };
 		013D3C8D1EEDC811004D24FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013D3C921EEDC811004D24FC /* SwiftyCSVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyCSVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicCSVParserTests.swift; sourceTree = "<group>"; };
+		013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PublicCSVParserTests.swift; path = "Public Interface Tests/PublicCSVParserTests.swift"; sourceTree = "<group>"; };
 		013D3C991EEDC811004D24FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		013D3CA61EEDCEBC004D24FC /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		013D3CA61EEDCEBC004D24FC /* DelimitedStringParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelimitedStringParser.swift; sourceTree = "<group>"; };
 		013D3CAC1EEDD3F3004D24FC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		013D3CAE1EEDD3F9004D24FC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		013D3CB01EEDD416004D24FC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		013D3CB21EEDD41A004D24FC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
-		013D3CB51EEDD88F004D24FC /* PrivateCSVParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateCSVParserTests.swift; sourceTree = "<group>"; };
+		013D3CB81EEE1991004D24FC /* EParseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EParseError.swift; sourceTree = "<group>"; };
+		013D3CBC1EEE1A2B004D24FC /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		013D3CBE1EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Comma Delimited CRLF Header.csv"; sourceTree = "<group>"; };
+		013D3CBF1EEE2BAA004D24FC /* Comma Delimited CRLF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Comma Delimited CRLF.csv"; sourceTree = "<group>"; };
+		013D3CC01EEE2BAA004D24FC /* Comma Delimited LF Header.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Comma Delimited LF Header.csv"; sourceTree = "<group>"; };
+		013D3CC11EEE2BAA004D24FC /* Comma Delimited LF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Comma Delimited LF.csv"; sourceTree = "<group>"; };
+		013D3CC21EEE2BAA004D24FC /* Tab Delimited CRLF Header.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tab Delimited CRLF Header.txt"; sourceTree = "<group>"; };
+		013D3CC31EEE2BAA004D24FC /* Tab Delimited CRLF.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tab Delimited CRLF.txt"; sourceTree = "<group>"; };
+		013D3CC41EEE2BAA004D24FC /* Tab Delimited LF Header.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tab Delimited LF Header.txt"; sourceTree = "<group>"; };
+		013D3CC51EEE2BAA004D24FC /* Tab Delimited LF.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tab Delimited LF.txt"; sourceTree = "<group>"; };
+		013D3CCE1EEF5D5D004D24FC /* ParserConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserConfiguration.swift; sourceTree = "<group>"; };
+		013D3CD01EEF5E69004D24FC /* ENewlineType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENewlineType.swift; sourceTree = "<group>"; };
+		013D3CD21EEF9351004D24FC /* DataConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConstants.swift; path = Data/DataConstants.swift; sourceTree = "<group>"; };
+		013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Extreme Data.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,20 +119,12 @@
 		013D3C961EEDC811004D24FC /* SwiftyCSVTests */ = {
 			isa = PBXGroup;
 			children = (
-				013D3CA31EEDCE94004D24FC /* Public Interface Tests */,
-				013D3CB41EEDD85D004D24FC /* Private Implementation Tests */,
+				013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */,
+				013D3CD21EEF9351004D24FC /* DataConstants.swift */,
+				013D3CB71EEE17E3004D24FC /* Data */,
 				013D3CA41EEDCE9A004D24FC /* Config */,
 			);
 			path = SwiftyCSVTests;
-			sourceTree = "<group>";
-		};
-		013D3CA31EEDCE94004D24FC /* Public Interface Tests */ = {
-			isa = PBXGroup;
-			children = (
-				013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */,
-			);
-			name = "Public Interface Tests";
-			path = "Public Interface Tests";
 			sourceTree = "<group>";
 		};
 		013D3CA41EEDCE9A004D24FC /* Config */ = {
@@ -120,7 +138,10 @@
 		013D3CA51EEDCEA6004D24FC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				013D3CA61EEDCEBC004D24FC /* Parser.swift */,
+				013D3CCE1EEF5D5D004D24FC /* ParserConfiguration.swift */,
+				013D3CA61EEDCEBC004D24FC /* DelimitedStringParser.swift */,
+				013D3CBA1EEE1A06004D24FC /* Enums */,
+				013D3CBB1EEE1A1C004D24FC /* Extensions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -145,13 +166,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		013D3CB41EEDD85D004D24FC /* Private Implementation Tests */ = {
+		013D3CB71EEE17E3004D24FC /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				013D3CB51EEDD88F004D24FC /* PrivateCSVParserTests.swift */,
+				013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */,
+				013D3CBE1EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv */,
+				013D3CBF1EEE2BAA004D24FC /* Comma Delimited CRLF.csv */,
+				013D3CC01EEE2BAA004D24FC /* Comma Delimited LF Header.csv */,
+				013D3CC11EEE2BAA004D24FC /* Comma Delimited LF.csv */,
+				013D3CC21EEE2BAA004D24FC /* Tab Delimited CRLF Header.txt */,
+				013D3CC31EEE2BAA004D24FC /* Tab Delimited CRLF.txt */,
+				013D3CC41EEE2BAA004D24FC /* Tab Delimited LF Header.txt */,
+				013D3CC51EEE2BAA004D24FC /* Tab Delimited LF.txt */,
 			);
-			name = "Private Implementation Tests";
-			path = "Private Implementation Tests";
+			path = Data;
+			sourceTree = "<group>";
+		};
+		013D3CBA1EEE1A06004D24FC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				013D3CB81EEE1991004D24FC /* EParseError.swift */,
+				013D3CD01EEF5E69004D24FC /* ENewlineType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		013D3CBB1EEE1A1C004D24FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				013D3CBC1EEE1A2B004D24FC /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +302,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013D3CC91EEE2BAA004D24FC /* Comma Delimited LF.csv in Resources */,
+				013D3CCB1EEE2BAA004D24FC /* Tab Delimited CRLF.txt in Resources */,
+				013D3CCA1EEE2BAA004D24FC /* Tab Delimited CRLF Header.txt in Resources */,
+				013D3CC81EEE2BAA004D24FC /* Comma Delimited LF Header.csv in Resources */,
+				013D3CCD1EEE2BAA004D24FC /* Tab Delimited LF.txt in Resources */,
+				013D3CCC1EEE2BAA004D24FC /* Tab Delimited LF Header.txt in Resources */,
+				013D3CD51EEF9FBE004D24FC /* Extreme Data.csv in Resources */,
+				013D3CC61EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv in Resources */,
+				013D3CC71EEE2BAA004D24FC /* Comma Delimited CRLF.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				013D3CA71EEDCEBC004D24FC /* Parser.swift in Sources */,
+				013D3CB91EEE1991004D24FC /* EParseError.swift in Sources */,
+				013D3CCF1EEF5D5E004D24FC /* ParserConfiguration.swift in Sources */,
+				013D3CA71EEDCEBC004D24FC /* DelimitedStringParser.swift in Sources */,
+				013D3CBD1EEE1A2B004D24FC /* StringExtension.swift in Sources */,
+				013D3CD11EEF5E69004D24FC /* ENewlineType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				013D3C981EEDC811004D24FC /* PublicCSVParserTests.swift in Sources */,
-				013D3CB61EEDD88F004D24FC /* PrivateCSVParserTests.swift in Sources */,
+				013D3CD31EEF9351004D24FC /* DataConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
