@@ -12,7 +12,7 @@ public class DelimitedStringParser {
     var configuration: ParserConfiguration
     
     public var headers: [String]
-    public var rows: [String]
+    public var rows: [[String]]
     
     public var keyedRows: [[String: String]]
     
@@ -77,7 +77,9 @@ public class DelimitedStringParser {
             }
         }
         
-        self.rows = allRows
+        for row in allRows {
+            self.rows.append(row.split(separator: self.configuration.delimiter))
+        }
         
         self.keyedRows = self.generateKeyedRows()
         
@@ -85,11 +87,10 @@ public class DelimitedStringParser {
     
     private func generateKeyedRows() -> [[String : String]] {
         var allDicts: [[String: String]] = []
-        for row in self.rows {
+        for rowValues in self.rows {
             var dict = [String : String]()
-            let values = row.split(separator: self.configuration.delimiter)
-            for i in 0 ..< values.count {
-                dict.updateValue(values[i] == "" ? "" : values[i], forKey: self.headers.isEmpty ? String(i) : self.headers[i])
+            for i in 0 ..< rowValues.count {
+                dict.updateValue(rowValues[i] == "" ? "" : rowValues[i], forKey: self.headers.isEmpty ? String(i) : self.headers[i])
             }
             allDicts.append(dict)
         }

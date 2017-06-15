@@ -10,7 +10,7 @@ import Foundation
 class DataConstants: NSObject {
     
     static let csvWindows:          (name: String, ext: String) = ("Comma Delimited CRLF", "csv")
-    static let csvWindowsHeader:    (name: String, ext: String) = ("Comma Delimited CRLF Header", "csv")
+    static let csvWindowsHeaders:    (name: String, ext: String) = ("Comma Delimited CRLF Header", "csv")
     
     static let csvUnix:             (name: String, ext: String) = ("Comma Delimited LF", "csv")
     static let csvUnixHeaders:      (name: String, ext: String) = ("Comma Delimited LF Header", "csv")
@@ -26,6 +26,7 @@ class DataConstants: NSObject {
     static let empty:               (name: String, ext: String) = ("Empty", "csv")
     static let tooFewHeaders:       (name: String, ext: String) = ("Too Few Headers", "csv")
     static let tooFewValues:        (name: String, ext: String) = ("Too Few Values", "csv")
+    static let smallUnixHeaders:    (name: String, ext: String) = ("Small LF Header", "csv")
     
     static func path(fileInfo: (name: String, ext: String)) -> String? {
         return Bundle(for: DataConstants.self).path(forResource: fileInfo.name, ofType: fileInfo.ext)

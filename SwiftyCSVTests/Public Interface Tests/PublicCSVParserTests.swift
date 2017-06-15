@@ -110,12 +110,25 @@ class PublicCSVParserTests: QuickSpec {
                 }
             }
             
+            context("with a 5 row UNIX CSV with header row") {
+                it("parsers the file and extract all row values and the headers") {
+                    let file = DataConstants.path(fileInfo: DataConstants.smallUnixHeaders)
+                    let parser = try! DelimitedStringParser(contentsOfFile: file!)
+                    expect(parser.headers).to(equal(["id", "first_name", "last_name", "email", "gender", "ip_address"]))
+                    expect(parser.rows.count).to(equal(5))
+                    expect(parser.rows.first!).to(equal(["1", "Karlan", "Snibson", "ksnibson0@imgur.com", "", "240.47.251.161"]))
+                    expect(parser.keyedRows.first!.keys.count).to(equal(6))
+                    expect(parser.keyedRows.first!.values.count).to(equal(6))
+                }
+            }
+            
             context("with a 1,000 row UNIX CSV with header row") {
                 it("parses the file and extracts all rows and the headers") {
                     let file = DataConstants.path(fileInfo: DataConstants.csvUnixHeaders)
                     let parser = try! DelimitedStringParser(contentsOfFile: file!)
                     expect(parser.headers).to(equal(["id", "first_name", "last_name", "email", "gender", "ip_address"]))
                     expect(parser.rows.count).to(equal(1000))
+                    expect(parser.rows.first!.count).to(equal(6))
                 }
             }
             
@@ -126,16 +139,18 @@ class PublicCSVParserTests: QuickSpec {
                     let parser = try! DelimitedStringParser(contentsOfFile: file!, withConfiguration: config)
                     expect(parser.headers).to(beEmpty())
                     expect(parser.rows.count).to(equal(1000))
+                    expect(parser.rows.first!.count).to(equal(6))
                 }
             }
             
             context("with a Windows CSV with 1,000 rows and headers") {
                 it("parses the file and extracts all rows and the headers") {
-                    let file = DataConstants.path(fileInfo: DataConstants.csvWindowsHeader)
+                    let file = DataConstants.path(fileInfo: DataConstants.csvWindowsHeaders)
                     let config = ParserConfiguration(delimiter: ",", newLineType: .windows, hasHeaders: true, maxLines: nil)
                     let parser = try! DelimitedStringParser(contentsOfFile: file!, withConfiguration: config)
                     expect(parser.headers).to(equal(["id", "first_name", "last_name", "email", "gender", "ip_address"]))
                     expect(parser.rows.count).to(equal(1000))
+                    expect(parser.rows.first!.count).to(equal(6))
                 }
             }
             
@@ -146,6 +161,7 @@ class PublicCSVParserTests: QuickSpec {
                     let parser = try! DelimitedStringParser(contentsOfFile: file!, withConfiguration: config)
                     expect(parser.headers).to(beEmpty())
                     expect(parser.rows.count).to(equal(1000))
+                    expect(parser.rows.first!.count).to(equal(6))
                 }
             }
             
@@ -156,6 +172,7 @@ class PublicCSVParserTests: QuickSpec {
                     let parser = try! DelimitedStringParser(contentsOfFile: file!, withConfiguration: config)
                     expect(parser.headers).to(beEmpty())
                     expect(parser.rows.count).to(equal(1000))
+                    expect(parser.rows.first!.count).to(equal(6))
                 }
             }
             
@@ -166,6 +183,7 @@ class PublicCSVParserTests: QuickSpec {
                     let parser = try! DelimitedStringParser(contentsOfFile: file!, withConfiguration: config)
                     expect(parser.headers.count).to(equal(6))
                     expect(parser.rows.count).to(equal(300))
+                    expect(parser.rows.first!.count).to(equal(6))
                 }
             }
             
@@ -176,6 +194,7 @@ class PublicCSVParserTests: QuickSpec {
                     let parser = try! DelimitedStringParser(contentsOfFile: file!, withConfiguration: config)
                     expect(parser.headers).to(beEmpty())
                     expect(parser.rows.count).to(equal(300))
+                    expect(parser.rows.first!.count).to(equal(6))
                 }
             }
             
@@ -194,6 +213,7 @@ class PublicCSVParserTests: QuickSpec {
                     
                     expect(parser.headers).to(equal(["id", "first_name", "last_name", "email", "gender", "ip_address"]))
                     expect(parser.rows.count).to(equal(1000))
+                    expect(parser.rows.first!.count).to(equal(6))
                     expect(parser.keyedRows.count).to(equal(1000))
                     expect(parser.keyedRows.first!).to(equal(keyedRow))
                 }
@@ -215,6 +235,7 @@ class PublicCSVParserTests: QuickSpec {
                     
                     expect(parser.headers.count).to(equal(0))
                     expect(parser.rows.count).to(equal(1000))
+                    expect(parser.rows.first!.count).to(equal(6))
                     expect(parser.keyedRows.count).to(equal(1000))
                     expect(parser.keyedRows.first!).to(equal(keyedRow))
                 }
@@ -229,6 +250,7 @@ class PublicCSVParserTests: QuickSpec {
                     let elapsedSeconds = Double(endTime.uptimeNanoseconds - startTime.uptimeNanoseconds) / 1_000_000_000
                     expect(parser.headers.count).to(equal(6))
                     expect(parser.rows.count).to(equal(25_000))
+                    expect(parser.rows.first!.count).to(equal(6))
                     expect(elapsedSeconds).to(beLessThan(5))
                 }
             }

@@ -30,6 +30,7 @@
 		013D3CD11EEF5E69004D24FC /* ENewlineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CD01EEF5E69004D24FC /* ENewlineType.swift */; };
 		013D3CD31EEF9351004D24FC /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CD21EEF9351004D24FC /* DataConstants.swift */; };
 		013D3CD51EEF9FBE004D24FC /* Extreme Data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */; };
+		015D63E31EF33C3A00FC556A /* Small LF Header.csv in Resources */ = {isa = PBXBuildFile; fileRef = 015D63E21EF33C3A00FC556A /* Small LF Header.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		013D3CD01EEF5E69004D24FC /* ENewlineType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENewlineType.swift; sourceTree = "<group>"; };
 		013D3CD21EEF9351004D24FC /* DataConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConstants.swift; path = Data/DataConstants.swift; sourceTree = "<group>"; };
 		013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Extreme Data.csv"; sourceTree = "<group>"; };
+		015D63E21EF33C3A00FC556A /* Small LF Header.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Small LF Header.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				010784311EF21D200080519B /* Empty.csv */,
 				010784331EF2279F0080519B /* Too Few Headers.csv */,
 				010784351EF2334A0080519B /* Too Few Values.csv */,
+				015D63E21EF33C3A00FC556A /* Small LF Header.csv */,
 				013D3CBE1EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv */,
 				013D3CBF1EEE2BAA004D24FC /* Comma Delimited CRLF.csv */,
 				013D3CC01EEE2BAA004D24FC /* Comma Delimited LF Header.csv */,
@@ -321,6 +324,7 @@
 				013D3CD51EEF9FBE004D24FC /* Extreme Data.csv in Resources */,
 				010784361EF2334A0080519B /* Too Few Values.csv in Resources */,
 				010784321EF21D200080519B /* Empty.csv in Resources */,
+				015D63E31EF33C3A00FC556A /* Small LF Header.csv in Resources */,
 				013D3CC61EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv in Resources */,
 				013D3CC71EEE2BAA004D24FC /* Comma Delimited CRLF.csv in Resources */,
 			);
