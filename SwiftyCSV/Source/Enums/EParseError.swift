@@ -10,4 +10,5 @@ import Foundation
 
 public enum EParseError: Error {
     case InvalidInput(message: String)
+    case InvalidConfiguration(message: String)
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010784321EF21D200080519B /* Empty.csv in Resources */ = {isa = PBXBuildFile; fileRef = 010784311EF21D200080519B /* Empty.csv */; };
+		010784341EF2279F0080519B /* Too Few Headers.csv in Resources */ = {isa = PBXBuildFile; fileRef = 010784331EF2279F0080519B /* Too Few Headers.csv */; };
+		010784361EF2334A0080519B /* Too Few Values.csv in Resources */ = {isa = PBXBuildFile; fileRef = 010784351EF2334A0080519B /* Too Few Values.csv */; };
 		013D3C931EEDC811004D24FC /* SwiftyCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D3C891EEDC811004D24FC /* SwiftyCSV.framework */; };
 		013D3C981EEDC811004D24FC /* PublicCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */; };
 		013D3C9A1EEDC811004D24FC /* SwiftyCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 013D3C8C1EEDC811004D24FC /* SwiftyCSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010784311EF21D200080519B /* Empty.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty.csv; sourceTree = "<group>"; };
+		010784331EF2279F0080519B /* Too Few Headers.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Too Few Headers.csv"; sourceTree = "<group>"; };
+		010784351EF2334A0080519B /* Too Few Values.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Too Few Values.csv"; sourceTree = "<group>"; };
 		013D3C891EEDC811004D24FC /* SwiftyCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		013D3C8C1EEDC811004D24FC /* SwiftyCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyCSV.h; sourceTree = "<group>"; };
 		013D3C8D1EEDC811004D24FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */,
+				010784311EF21D200080519B /* Empty.csv */,
+				010784331EF2279F0080519B /* Too Few Headers.csv */,
+				010784351EF2334A0080519B /* Too Few Values.csv */,
 				013D3CBE1EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv */,
 				013D3CBF1EEE2BAA004D24FC /* Comma Delimited CRLF.csv */,
 				013D3CC01EEE2BAA004D24FC /* Comma Delimited LF Header.csv */,
@@ -307,8 +316,11 @@
 				013D3CCA1EEE2BAA004D24FC /* Tab Delimited CRLF Header.txt in Resources */,
 				013D3CC81EEE2BAA004D24FC /* Comma Delimited LF Header.csv in Resources */,
 				013D3CCD1EEE2BAA004D24FC /* Tab Delimited LF.txt in Resources */,
+				010784341EF2279F0080519B /* Too Few Headers.csv in Resources */,
 				013D3CCC1EEE2BAA004D24FC /* Tab Delimited LF Header.txt in Resources */,
 				013D3CD51EEF9FBE004D24FC /* Extreme Data.csv in Resources */,
+				010784361EF2334A0080519B /* Too Few Values.csv in Resources */,
+				010784321EF21D200080519B /* Empty.csv in Resources */,
 				013D3CC61EEE2BAA004D24FC /* Comma Delimited CRLF Header.csv in Resources */,
 				013D3CC71EEE2BAA004D24FC /* Comma Delimited CRLF.csv in Resources */,
 			);

@@ -11,11 +11,19 @@ public class ParserConfiguration {
     
     public var hasHeaders: Bool = true
     public var delimiter: Character = ","
-    public var newLineCharacter: ENewlineType = .unix
-    public var maxLines: Int = 0
+    public var newLineType: ENewlineType = .unix
+    public var maxLines: Int? = nil
  
     public init() {
         
+    }
+    
+    public convenience init(delimiter: Character, newLineType: ENewlineType, hasHeaders: Bool, maxLines: Int?) {
+        self.init()
+        self.delimiter = delimiter
+        self.newLineType = newLineType
+        self.hasHeaders = hasHeaders
+        self.maxLines = maxLines
     }
     
 }

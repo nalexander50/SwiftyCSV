@@ -14,7 +14,7 @@ extension String {
     }
     
     func split(separator: Character) -> [String] {
-        return self.characters.split(separator: separator).map { (subsequence) -> String in String(subsequence) }
+        return self.characters.split(separator: separator, maxSplits: Int.max, omittingEmptySubsequences: false).map(String.init)
     }
     
 }

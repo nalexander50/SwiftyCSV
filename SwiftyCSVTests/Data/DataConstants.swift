@@ -23,6 +23,10 @@ class DataConstants: NSObject {
     
     static let extremeUnix:         (name: String, ext: String) = ("Extreme Data", "csv")
     
+    static let empty:               (name: String, ext: String) = ("Empty", "csv")
+    static let tooFewHeaders:       (name: String, ext: String) = ("Too Few Headers", "csv")
+    static let tooFewValues:        (name: String, ext: String) = ("Too Few Values", "csv")
+    
     static func path(fileInfo: (name: String, ext: String)) -> String? {
         return Bundle(for: DataConstants.self).path(forResource: fileInfo.name, ofType: fileInfo.ext)
     }
