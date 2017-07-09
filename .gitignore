@@ -31,3 +31,8 @@ xcuserdata
 
 # Carthage
 Carthage/Build
+
+# Cocapods
+Pods/
+Podfile.lock
+*.xcworkspace
