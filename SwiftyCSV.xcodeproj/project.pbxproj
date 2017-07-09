@@ -53,7 +53,7 @@
 		013D3C8C1EEDC811004D24FC /* SwiftyCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyCSV.h; sourceTree = "<group>"; };
 		013D3C8D1EEDC811004D24FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013D3C921EEDC811004D24FC /* SwiftyCSVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyCSVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PublicCSVParserTests.swift; path = "Public Interface Tests/PublicCSVParserTests.swift"; sourceTree = "<group>"; };
+		013D3C971EEDC811004D24FC /* PublicCSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PublicCSVParserTests.swift; path = PublicCSVParserTests.swift; sourceTree = "<group>"; };
 		013D3C991EEDC811004D24FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013D3CA61EEDCEBC004D24FC /* DelimitedStringParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelimitedStringParser.swift; sourceTree = "<group>"; };
 		013D3CAC1EEDD3F3004D24FC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		013D3CC51EEE2BAA004D24FC /* Tab Delimited LF.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tab Delimited LF.txt"; sourceTree = "<group>"; };
 		013D3CCE1EEF5D5D004D24FC /* ParserConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserConfiguration.swift; sourceTree = "<group>"; };
 		013D3CD01EEF5E69004D24FC /* ENewlineType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENewlineType.swift; sourceTree = "<group>"; };
-		013D3CD21EEF9351004D24FC /* DataConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConstants.swift; path = Data/DataConstants.swift; sourceTree = "<group>"; };
+		013D3CD21EEF9351004D24FC /* DataConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConstants.swift; path = DataConstants.swift; sourceTree = "<group>"; };
 		013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Extreme Data.csv"; sourceTree = "<group>"; };
 		015D63E21EF33C3A00FC556A /* Small LF Header.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Small LF Header.csv"; sourceTree = "<group>"; };
 		191E98617DB0B893FE7F3276 /* Pods_SwiftyCSVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyCSVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
