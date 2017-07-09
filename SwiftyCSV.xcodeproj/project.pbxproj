@@ -31,6 +31,8 @@
 		013D3CD31EEF9351004D24FC /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D3CD21EEF9351004D24FC /* DataConstants.swift */; };
 		013D3CD51EEF9FBE004D24FC /* Extreme Data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */; };
 		015D63E31EF33C3A00FC556A /* Small LF Header.csv in Resources */ = {isa = PBXBuildFile; fileRef = 015D63E21EF33C3A00FC556A /* Small LF Header.csv */; };
+		1504C407EF537D6BB484AE63 /* Pods_SwiftyCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56858EBFBA1C923662507F3B /* Pods_SwiftyCSV.framework */; };
+		90605F61627BA3AB5F4957A0 /* Pods_SwiftyCSVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E98617DB0B893FE7F3276 /* Pods_SwiftyCSVTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,12 @@
 		013D3CD21EEF9351004D24FC /* DataConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConstants.swift; path = Data/DataConstants.swift; sourceTree = "<group>"; };
 		013D3CD41EEF9FBE004D24FC /* Extreme Data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Extreme Data.csv"; sourceTree = "<group>"; };
 		015D63E21EF33C3A00FC556A /* Small LF Header.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Small LF Header.csv"; sourceTree = "<group>"; };
+		191E98617DB0B893FE7F3276 /* Pods_SwiftyCSVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyCSVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7CBAA607ECE14A2469B819 /* Pods-SwiftyCSVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCSVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCSVTests/Pods-SwiftyCSVTests.release.xcconfig"; sourceTree = "<group>"; };
+		56858EBFBA1C923662507F3B /* Pods_SwiftyCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F48727AAB59116F5ED2295 /* Pods-SwiftyCSV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCSV.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCSV/Pods-SwiftyCSV.release.xcconfig"; sourceTree = "<group>"; };
+		F58A6D07C8D067CEEAA55780 /* Pods-SwiftyCSVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCSVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCSVTests/Pods-SwiftyCSVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAE42A67C639C623F55B7E35 /* Pods-SwiftyCSV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCSV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCSV/Pods-SwiftyCSV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1504C407EF537D6BB484AE63 /* Pods_SwiftyCSV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +99,7 @@
 				013D3C931EEDC811004D24FC /* SwiftyCSV.framework in Frameworks */,
 				013D3CB31EEDD41A004D24FC /* Quick.framework in Frameworks */,
 				013D3CB11EEDD416004D24FC /* Nimble.framework in Frameworks */,
+				90605F61627BA3AB5F4957A0 /* Pods_SwiftyCSVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +113,7 @@
 				013D3C961EEDC811004D24FC /* SwiftyCSVTests */,
 				013D3C8A1EEDC811004D24FC /* Products */,
 				013D3CAB1EEDD3F3004D24FC /* Frameworks */,
+				D90516B8B58FEEEB2257EAE0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +181,8 @@
 				013D3CB01EEDD416004D24FC /* Nimble.framework */,
 				013D3CAE1EEDD3F9004D24FC /* Quick.framework */,
 				013D3CAC1EEDD3F3004D24FC /* Nimble.framework */,
+				56858EBFBA1C923662507F3B /* Pods_SwiftyCSV.framework */,
+				191E98617DB0B893FE7F3276 /* Pods_SwiftyCSVTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +224,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D90516B8B58FEEEB2257EAE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAE42A67C639C623F55B7E35 /* Pods-SwiftyCSV.debug.xcconfig */,
+				E2F48727AAB59116F5ED2295 /* Pods-SwiftyCSV.release.xcconfig */,
+				F58A6D07C8D067CEEAA55780 /* Pods-SwiftyCSVTests.debug.xcconfig */,
+				1D7CBAA607ECE14A2469B819 /* Pods-SwiftyCSVTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -229,10 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013D3C9D1EEDC811004D24FC /* Build configuration list for PBXNativeTarget "SwiftyCSV" */;
 			buildPhases = (
+				5FD1C3F8F0AEFBB786A24F28 /* [CP] Check Pods Manifest.lock */,
 				013D3C841EEDC811004D24FC /* Sources */,
 				013D3C851EEDC811004D24FC /* Frameworks */,
 				013D3C861EEDC811004D24FC /* Headers */,
 				013D3C871EEDC811004D24FC /* Resources */,
+				1911C9B3497AF7EC0AED7FA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013D3CA01EEDC811004D24FC /* Build configuration list for PBXNativeTarget "SwiftyCSVTests" */;
 			buildPhases = (
+				87A42123866FEC043292B2E4 /* [CP] Check Pods Manifest.lock */,
 				013D3C8E1EEDC811004D24FC /* Sources */,
 				013D3C8F1EEDC811004D24FC /* Frameworks */,
 				013D3C901EEDC811004D24FC /* Resources */,
+				E21359A181CA9CCFAE11936A /* [CP] Embed Pods Frameworks */,
+				51B5FBCA3EB943A35F9027CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,6 +360,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1911C9B3497AF7EC0AED7FA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyCSV/Pods-SwiftyCSV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B5FBCA3EB943A35F9027CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyCSVTests/Pods-SwiftyCSVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FD1C3F8F0AEFBB786A24F28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87A42123866FEC043292B2E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E21359A181CA9CCFAE11936A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyCSVTests/Pods-SwiftyCSVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		013D3C841EEDC811004D24FC /* Sources */ = {
@@ -468,6 +575,7 @@
 		};
 		013D3C9E1EEDC811004D24FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE42A67C639C623F55B7E35 /* Pods-SwiftyCSV.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -489,6 +597,7 @@
 		};
 		013D3C9F1EEDC811004D24FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F48727AAB59116F5ED2295 /* Pods-SwiftyCSV.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -509,6 +618,7 @@
 		};
 		013D3CA11EEDC811004D24FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F58A6D07C8D067CEEAA55780 /* Pods-SwiftyCSVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 86M7CMCE7J;
@@ -522,6 +632,7 @@
 		};
 		013D3CA21EEDC811004D24FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7CBAA607ECE14A2469B819 /* Pods-SwiftyCSVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 86M7CMCE7J;
